@@ -1,49 +1,137 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Encabezado */
 header {
-    background-color: #007acc;
+    background-color: #005f99;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+}
+
+/* Contenedor principal */
 section {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: #ffffffdd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffffee;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Imagen de perfil */
 img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Títulos */
 h2 {
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
+    color: #005f99;
+    border-bottom: 2px solid #005f99;
     padding-bottom: 5px;
+    margin-top: 30px;
 }
 
+/* Listas */
 ul {
     list-style-type: square;
     padding-left: 20px;
 }
 
-footer {
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
     text-align: center;
-    margin-top: 30px;
+    background-color: #f9f9f9;
+}
+
+table th {
+    background-color: #e6f2ff;
+    color: #003d66;
+}
+
+/* Enlaces */
+a {
+    color: #005f99;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #002f4b;
+    text-decoration: underline;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
     padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
     background-color: #007acc;
     color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f99;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #005f99;
+    color: white;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
