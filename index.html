@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <title>Mi Página Personal</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>¡Hola! Soy Edwin Pejendino</h1>
         <p>Estudiante de Programación Web</p>
-        
     </header>
+
     <nav>
         <ul class="navbar">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#intereses">Intereses</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#horario">Horario</a></li>
-        <li><a href="#redes">Redes</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#intereses">Intereses</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#tareas">Tareas Prioritarias</a></li>
+            <li><a href="#horario">Horario</a></li>
+            <li><a href="#redes">Redes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -59,9 +61,18 @@
             <h2>Habilidades</h2>
             <ul>
                 <li>Aprendizaje ágil</li>
-                <li>Proactivo y con alta capacidad de aprendizaje</li>
+                <li>Proactividad</li>
                 <li>Trabajo en equipo</li>
             </ul>
+        </section>
+
+        <section id="tareas">
+            <h2>Tareas prioritarias</h2>
+            <ol>
+                <li>Finalizar diplomado en Big Data</li>
+                <li>Practicar desarrollo web</li>
+                <li>Subir proyectos a GitHub</li>
+            </ol>
         </section>
 
         <section id="horario">
@@ -74,18 +85,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>Estudiar HTML y Git</td>
-                    </tr>
-                    <tr>
-                        <td>Martes</td>
-                        <td>Trabajo práctico y lectura técnica</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>Clases de programación</td>
-                    </tr>
+                    <tr><td>Lunes</td><td>Estudiar HTML y Git</td></tr>
+                    <tr><td>Martes</td><td>Trabajo práctico y lectura técnica</td></tr>
+                    <tr><td>Miércoles</td><td>Clases de programación</td></tr>
                 </tbody>
             </table>
         </section>
@@ -100,15 +102,15 @@
 
         <section id="contacto">
             <h2>Formulario de contacto</h2>
-            <form action="#" method="post">
+            <form id="contactForm">
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+                <input type="text" id="nombre" required><br><br>
 
                 <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo" required><br><br>
+                <input type="email" id="correo" required><br><br>
 
                 <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea><br><br>
+                <textarea id="mensaje" rows="4" cols="40" required></textarea><br><br>
 
                 <input type="submit" value="Enviar">
             </form>
@@ -123,25 +125,7 @@
     <footer>
         <p>© 2025 Edwin Pejendino – Todos los derechos reservados</p>
     </footer>
-    <button id="btn-arriba" title="Volver arriba">↑</button>
-    <script>
-  // Mostrar el botón cuando el usuario hace scroll hacia abajo
-    window.onscroll = function () {
-    const btn = document.getElementById("btn-arriba");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-    };
 
-  // Al hacer clic, volver arriba suavemente
-    document.getElementById("btn-arriba").onclick = function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-    };
-</script>
+    <button id="btn-arriba" title="Volver arriba">↑</button>
 </body>
 </html>
